@@ -4,3 +4,5 @@
 
 ## 통과
 ![code](https://user-images.githubusercontent.com/68339352/113864726-36a53100-97e6-11eb-8f97-a37d65a0dccb.PNG)
+
+## 트럭
