@@ -26,12 +26,12 @@ function solution(bridge_length, weight, truck_weights) {
     let waitingTrucks = truck_weights.length; //다리 지나기 전 트럭개수
     let crossedTrucks = 0; //다리를 지난 트럭개수
 
-    //진입한 순간에 1초 감소가 무슨 말..?
+    //진입한 순간에 1초 감소
     let second = 1;
     let onBridge = [
         {
             truckWeight: truck_weights.shift(),
-            times: bridge_length - 1
+            times: bridge_length - 1//마지막 트럭이 빠져나갈 때에도 while문에 진입하기 때문에 미리 1을 빼주는 것.
         }
     ]
 
@@ -44,12 +44,12 @@ function solution(bridge_length, weight, truck_weights) {
         }
 
         //1초씩 증가할 때 일어나야 하는 일
-        second++;
+        second++; //마지막 트럭이 빠져나갈때에도 while문에 진입.
         let currentWeight = 0;
         onBridge = onBridge.map((truck) => {
             const { truckWeight, times } = truck;
             currentWeight = currentWeight + truckWeight;
-            return {...truck, times: times - 1} //모든 트럭의 걸리는 시간을 1초씩 감소한다?
+            return {...truck, times: times - 1} //여기서 남은 시간을 1초씩 감소해줌.
         })
         console.log("onBridge", onBridge);
 
@@ -57,7 +57,6 @@ function solution(bridge_length, weight, truck_weights) {
             const truck = { truckWeight: truck_weights.shift(), times: bridge_length - 1 };
             onBridge.push(truck);
         }
-
     }
 
     return second;
