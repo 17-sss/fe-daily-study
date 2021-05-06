@@ -39,3 +39,5 @@ function solution(expression) {
 const expression = "100-200*300-500+20";
 
 solution(expression);
+// 빽 트레킹을 쓰려했으나 빽트레킹이 아닌 리컬션만 쓴거같다. 
+//어려웠던점 splice 는 exp 에 직접 영향을 준다. (나중에 공부 왠만하면 쓰지말자)
