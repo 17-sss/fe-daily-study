@@ -25,19 +25,20 @@ function solution(expression) {
         eval(nums[idx] + c[i] + nums[idx + 1]),
         ...nums.slice(idx + 2, nums.length),
       ];
-      const newExp = exp.filter((v, i) => i !== idx);
-      BE(arr, newExp, c, i);
+      exp.splice(idx, 1);
+      //const newExp = exp.filter((v, i) => i !== idx);
+      BE(arr, exp, c, i);
     } else {
       i++;
       BE(nums, exp, c, i);
     }
   };
-  cases.map((c) => BE(num, express, c));
-  return Math.max.apply(null, sum);
+  cases.map((c) => BE(num, [...express], c));
+  return sum;
 }
 
 const expression = "100-200*300-500+20";
 
-solution(expression);
-// 빽 트레킹을 쓰려했으나 빽트레킹이 아닌 리컬션만 쓴거같다. 
+console.log(solution(expression));
+// 빽 트레킹을 쓰려했으나 빽트레킹이 아닌 리컬션만 쓴거같다.
 //어려웠던점 splice 는 exp 에 직접 영향을 준다. (나중에 공부 왠만하면 쓰지말자)

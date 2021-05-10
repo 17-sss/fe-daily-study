@@ -26,7 +26,6 @@ function solution(n, words) {
     i++;
     if (i === words.length) return [0, 0];
   }
-
 }
 
 console.log(solution(3, [
