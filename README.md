@@ -104,6 +104,10 @@
     예) 다리를 지나는 트럭(X)   다리를지나는트럭(O)
     ```
 -   만약 올리는 파일이 2개 이상이라면, 자신의 닉네임의 폴더에 파일들을 넣어서 PR해주세요!
-    `예) /programmers/level2/다리를지나는트럭/Rano |_ Rano_readme.md |_ Rano_answer.js`
+    ```
+    예) /programmers/level2/다리를지나는트럭/Rano
+                                            |_ Rano_readme.md
+                                            |_ Rano_answer.js
+    ```
 
 </details>
