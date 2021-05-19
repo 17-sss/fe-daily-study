@@ -14,7 +14,7 @@
 
 -   [알고리즘 스터디 스케줄 표 (코드없는 프로그래밍)](https://docs.google.com/spreadsheets/d/1KM0O-IDdslBk3keLeQgLuHs9AGWj9zpklOk8UkEG-WE/edit?usp=sharing)
 -   항상 스케줄은 유동적으로 바뀔 수 있습니다!
-    -   각 영상의 난이도를 보고 항상 미리 알려주실 [제쓴](https://github.com/kowoohyuk)에게 미리 감사의 인사를 😁😁
+    -   각 영상의 난이도를 보고 항상 미리 스케줄 체크를 해주시는 [제쓴](https://github.com/kowoohyuk)에게 미리 감사의 인사를 😁😁
 
 ### **3.** 플레이리스트 링크 정리
 
