@@ -26,6 +26,8 @@ var searchMatrix = function(matrix, target) {
 };
 ```
 
+### Search a 2D Matrix II
+Problem: https://leetcode.com/problems/search-a-2d-matrix-ii/submissions/
 #### 중급
 <정렬이 되어 있지 않은 2D Matrix>
 - 하나의 행, 하나의 열은 정렬이 되어 있지만 한 열의 마지막 숫자는 다른 열의 마지막 숫자보다 클 수도 있다.
