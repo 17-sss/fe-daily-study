@@ -21,7 +21,7 @@ var merge = function (intervals) {
 
 ## 2. Shortest Unsorted Continuous Subarray
 
-### 풀이 1. 시간복잡도 O(n), 영상의 풀이대로 풀이!
+### 풀이 2. 시간복잡도 O(n)
 
 ```js
 var findUnsortedSubarray = function (nums) {
