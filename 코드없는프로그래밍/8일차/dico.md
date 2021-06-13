@@ -1,7 +1,7 @@
 ### 415. Add Strings
 https://leetcode.com/problems/add-strings/
 
-방법 1.
+방법 1. - 실패
 parseInt()로 문자를 숫자 변환한 후, 연산하고 JSON.stringify()로 다시 문자열화한다.
 하지만 이 경우, 숫자의 자릿수가 32/64-bit 를 넘어가게 되면 적용이 되지 않는다.
 ```js
@@ -9,8 +9,16 @@ const addStrings = function(num1, num2) {
    return JSON.stringify(parseInt(num1) + parseInt(num2));
 };
 ```
+방법 2. - 통과
+BigInt()는 number 값의 최대치인 2^53 - 1보다 더 큰 정수를 안정적으로 나타낼 수 있게 해주는 내장객체다.
+BigInt()를 사용하면 방법1에서 발생되었던 runtime error를 방지할 수 있다.
+```js
+const addStrings = function(num1, num2) {
+   return (BigInt(num1) + BigInt(num2)).toString();
+};
+```
 
-방법 2.
+방법 3.
 pivot 두 개를 각각의 string에 만든다.
 각 자릿수를 한자리씩 맞춰서 뒤에서부터 덧셈을 해준다.
 덧셈 시 나머지를 가진 carry와 올림을 가진 up 변수를 만들어서 덧셈을 진행한다.
