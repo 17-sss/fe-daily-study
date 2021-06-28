@@ -69,8 +69,8 @@
         이 두 값은, 현재 위치 `grid[y, x]` 를 기점으로 바로 위에 있는 값 (`value1`) 오른쪽에 있는 값 (`value2`)을 계산해준 것!
 
         ```js
-        const value1 = y ? grid[y - 1][x] : -1; // F(x, y-1)을 뜻함
-        const value2 = x ? grid[y][x - 1] : -1; // F(x-1, y)을 뜻함
+                    const value1 = y ? grid[y - 1][x] : -1; // F(x, y-1)을 뜻함
+                    const value2 = x ? grid[y][x - 1] : -1; // F(x-1, y)을 뜻함
         ```
 
     -   위에서 계산해준 `value1` & `value2`가 _`undefined`_ 일 경우가 있음  
@@ -116,10 +116,10 @@
 
 **이미지**
 
-- Top-Down 방식 & Bottom-Up 방식의 공식  
-    <img src="https://user-images.githubusercontent.com/33610315/123626402-c8539600-d84b-11eb-85d0-5ff16ede8bf9.png" width=400/>
-- Bottom-Up 방식의 공식 및 참고 이미지  
-    <img src="https://user-images.githubusercontent.com/33610315/123626523-e7eabe80-d84b-11eb-9f6e-e4e42544ecfb.png" width=400/>
+-   Top-Down 방식 & Bottom-Up 방식의 공식  
+     <img src="https://user-images.githubusercontent.com/33610315/123626402-c8539600-d84b-11eb-85d0-5ff16ede8bf9.png" width=400/>
+-   Bottom-Up 방식의 공식 및 참고 이미지  
+     <img src="https://user-images.githubusercontent.com/33610315/123626523-e7eabe80-d84b-11eb-9f6e-e4e42544ecfb.png" width=400/>
 
 **코드**
 
@@ -132,7 +132,7 @@
      * @return {number}
      */
     const coinChange = (coins, amount) => {
-        // 결과 값에 쓰일 배열 (아래 while 문에서 순회하는 모든 nCurrCost에 필요한 동전의 갯수를 계산하고 넣을 배열) 
+        // 결과 값에 쓰일 배열 (아래 while 문에서 순회하는 모든 nCurrCost에 필요한 동전의 갯수를 계산하고 넣을 배열)
         const arrCalc = [];
 
         // 만약 amount가 10이라면 0~10까지 순회
