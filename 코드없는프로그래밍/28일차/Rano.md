@@ -141,8 +141,8 @@
     ```js
         let nPivot = 0;
         while (nums.length > nPivot) {
-            // 1) 현재 순회위치의 값 (nums - num)
-            //  만약 배열 sumValues이 비어있을 시엔 (nPivot - 1 위치에 값이 없을 때) 
+            // 1) 현재 순회위치의 값 (nums ▶ num)
+            //  만약 배열 sumValues이 비어있을 시엔 ("nPivot - 1" 위치에 값이 없을 때) 
             //  아래 if문 들어가지 않고 sumValues에 push 함. 그래서 변수명이 sumValue
             let sumValue = nums[nPivot];
 
