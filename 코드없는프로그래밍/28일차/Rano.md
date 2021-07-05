@@ -1,6 +1,6 @@
 ## 알고리즘 기초 다지기 프로젝트 (feat. 코드없는 프로그래밍) [2021년 07월 05일]
 
-### **1.** Leetcode - Decode WaysMax SubArray Sum
+### **1.** Leetcode - Decode Ways
 
 [문제: LeetCode - 91. Decode Ways](https://leetcode.com/problems/decode-ways/)
 
@@ -77,7 +77,6 @@
             (numSet.has(s[strSize - 2]) ? result[strSize - 1] : 0) +
             Number(numSet.has(twoChar)); // 2-2) 맨 뒤 두글자가 디코딩이 되는지 확인.
                                          //      디코딩된다면 1을 추가하여 2-1) 의 값과 더하여 result[strSize - 2]에 대입.
-
 
         // 3) 맨 뒤 첫글자 & 두글자의 디코딩 케이스는 계산했으니 그 값들을 기반으로
             //  나머지 글자의 디코딩케이스를 계산하여 result 배열에 i 위치에 대입
