@@ -1,6 +1,6 @@
 ## 알고리즘 기초 다지기 프로젝트 (feat. 코드없는 프로그래밍) [2021년 07월 06일]
 
-### **1.** Leetcode - Palindromic Substrings (실패 / 진짜 이해 1도 못함)
+### **1.** Leetcode - Palindromic Substrings [**_Try Again_**]
 
 [문제: LeetCode - 647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 
