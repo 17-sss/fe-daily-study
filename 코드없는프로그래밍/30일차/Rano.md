@@ -1,6 +1,6 @@
 ## 알고리즘 기초 다지기 프로젝트 (feat. 코드없는 프로그래밍) [2021년 07월 07일]
 
-### **1.** Leetcode - Word Break [**_Try Again_**]
+### **1.** Leetcode - Word Break
 
 [문제: LeetCode - 139. Word Break](https://leetcode.com/problems/word-break/)
 
