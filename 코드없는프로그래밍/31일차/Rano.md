@@ -83,8 +83,8 @@
 -   Bottom-Up
     - 이미지  
         <img src="https://user-images.githubusercontent.com/33610315/124852212-f15bef80-dfde-11eb-9351-5c1790c937e6.png" width=500/>
-    - 동영상 (위 로직 😱 부분)  
-        https://user-images.githubusercontent.com/33610315/124867896-ec586980-dff9-11eb-951d-6f2bb312de31.mov
+    - 이미지 GIF (위 로직 😱 부분)  
+        <img src="https://user-images.githubusercontent.com/33610315/124868251-756fa080-dffa-11eb-8994-e236682d7c09.gif" width=400 />
 
 ---
 
