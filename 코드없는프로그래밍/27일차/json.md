@@ -22,3 +22,23 @@ const minPathSum = function (grid) {
   return grid[m - 1][n - 1];
 };
 ```
+
+## 2. Coin Change
+
+### 풀이
+
+```js
+const coinChange = function (coins, amount) {
+  const dp = Array(amount + 1).fill(Infinity);
+
+  dp[0] = 0;
+  for (let i = 0; i <= amount; ++i) {
+    for (let j = 0; j < coins.length; ++j) {
+      if (coins[j] <= i) {
+        dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
+      }
+    }
+  }
+  return dp[amount] > amount ? -1 : dp[amount];
+};
+```
